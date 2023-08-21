@@ -1,9 +1,123 @@
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 100%;
+  width: 1440px;
+
+  padding: 64px 120px 0 120px;
+
+  &-logo {
+    width: 126px;
+    height: 54px;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  &-btn {
+    color: var(--grayscale-50, #333);
+    /* Poppins/Regular/16 */
+    font-family: "Poppins";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+
+    display: none;
+
+    cursor: pointer;
+
+    border: none;
+
+    background: transparent;
+  }
+
   .navigation {
     .navigation-list {
-        &__item {
-            margin-right: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 0;
+
+      &__item {
+        margin-right: 74px;
+
+        list-style-type: none;
+
+        color: var(--grayscale-50, #333);
+        /* Poppins/Regular/16 */
+        font-family: "Poppins";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+
+        a {
+          text-decoration: none;
+
+          color: black;
         }
+      }
+      &__item:nth-child(5) {
+        margin-right: 0;
+      }
+
+      &__item:hover {
+        color: var(--grayscale-50, #333);
+
+        /* Poppins/SemiBold/16 */
+        font-family: "Poppins";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%; /* 22.4px */
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    &-logo {
+    }
+    .navigation {
+      .navigation-list {
+        .navigation-list__item {
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    &-logo {
+    }
+    &-btn {
+      display: block;
+
+      color: var(--grayscale-50, #333);
+
+      /* Poppins/SemiBold/16 */
+      font-family: "Poppins";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 140%; /* 22.4px */
+    }
+    .navigation {
+      display: none;
+      .navigation-list {
+        .navigation-list__item {
+          margin-right: 30px;
+        }
+      }
     }
   }
 }
