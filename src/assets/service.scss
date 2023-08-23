@@ -1,0 +1,115 @@
+.service {
+  display: flex;
+  flex-direction: column;
+
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+
+  position: relative;
+
+  &-text {
+    width: 883px;
+
+    position: absolute;
+    top: -268px;
+    background-color: #fff;
+    left: -130px;
+
+    &__name {
+      color: var(--grayscale-black, #000);
+
+      /* Poppins/Medium/16 */
+      font-family: "Poppins";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%; /* 24px */
+
+      margin-bottom: 20px;
+    }
+    &__name::after {
+      content: "";
+      position: absolute;
+      top: 2%;
+      height: 2px;
+      background: #000;
+    }
+    &__name::after {
+      left: 9%;
+      right: -1000%;
+
+      width: 683px;
+    }
+    &__title {
+      color: var(--grayscale-50, #333);
+
+      /* Poppins/SemiBold/36 */
+      font-family: "Poppins";
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 170%; /* 61.2px */
+    }
+    &__subtitle {
+      color: var(--grayscale-10, #9c9c9c);
+
+      /* Poppins/Regular/18 */
+      font-family: "Poppins";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%; /* 28.8px */
+
+      margin-bottom: 40px;
+
+      width: 471px;
+    }
+  }
+  &-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 35px;
+
+    &__text {
+      display: flex;
+      align-items: center;
+
+      .number {
+        color: var(--grayscale-50, #333);
+
+        /* Poppins/SemiBold/24 */
+        font-family: "Poppins";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%; /* 33.6px */
+
+        margin-right: 40px;
+      }
+      .text {
+        color: var(--grayscale-50, #333);
+
+        /* Poppins/SemiBold/24 */
+        font-family: "Poppins";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%; /* 33.6px */
+      }
+    }
+    &__link {
+      padding-right: 40px;
+    }
+  }
+  &-img {
+    width: 1076px;
+    height: 682.518px;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
