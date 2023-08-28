@@ -1,3 +1,5 @@
+@import "./mixin.scss";
+
 .service {
   display: flex;
   flex-direction: column;
@@ -7,13 +9,33 @@
 
   position: relative;
 
+  @include responsive(desktop) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 16px;
+  }
+
   &-text {
     width: 883px;
 
     position: absolute;
     top: -268px;
     background-color: #fff;
-    left: -130px;
+    left: -9%;
+
+    @include responsive(desktop) {
+      position: static;
+
+      top: 0;
+    }
+
+    @include responsive(tablet) {
+      max-width: 100%;
+    }
+  
 
     &__name {
       color: var(--grayscale-black, #000);
@@ -39,6 +61,10 @@
       right: -1000%;
 
       width: 683px;
+
+      @include responsive(desktop) {
+        display: none;
+      }
     }
     &__title {
       color: var(--grayscale-50, #333);
@@ -49,6 +75,18 @@
       font-style: normal;
       font-weight: 600;
       line-height: 170%; /* 61.2px */
+
+      @include responsive(tablet) {
+        font-size: 28px;
+        line-height: 120%;
+      }
+
+      @include responsive(phone) {
+        margin-bottom: 20px;
+
+        font-size: 24px;
+        line-height: 100%;
+      }
     }
     &__subtitle {
       color: var(--grayscale-10, #9c9c9c);
@@ -63,6 +101,17 @@
       margin-bottom: 40px;
 
       width: 471px;
+
+      @include responsive(tablet) {
+        font-size: 16px;
+        line-height: 100%;
+      }
+
+      @include responsive(phone) {
+        width: auto;
+
+        margin-bottom: 20px;
+      }
     }
   }
   &-navigation {
@@ -76,6 +125,7 @@
       display: flex;
       align-items: center;
 
+
       .number {
         color: var(--grayscale-50, #333);
 
@@ -87,6 +137,10 @@
         line-height: 140%; /* 33.6px */
 
         margin-right: 40px;
+
+        @include responsive(phone) {
+          margin-right: 20px;
+        }
       }
       .text {
         color: var(--grayscale-50, #333);
@@ -97,6 +151,12 @@
         font-style: normal;
         font-weight: 600;
         line-height: 140%; /* 33.6px */
+
+        @include responsive(tablet) {
+          font-size: 20px;
+
+          line-height: 100%;
+        }
       }
     }
     &__link {
@@ -104,11 +164,19 @@
     }
   }
   &-img {
-    width: 1076px;
-    height: 682.518px;
+    max-width: 1076px;
+    max-height: 682.518px;
     img {
       max-width: 100%;
       max-height: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1441px) {
+  .service {
+    &-text {
+      left: 0%;
     }
   }
 }
