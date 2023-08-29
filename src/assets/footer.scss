@@ -1,0 +1,121 @@
+@import "../assets/mixin.scss";
+.footer {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding: 0 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include responsive(tablet) {
+    flex-direction: column;
+    align-items: center;
+  }
+  .left-block {
+    &__img {
+    }
+    &__title {
+      color: var(--grayscale-50, #333);
+
+      /* Poppins/SemiBold/36 */
+      font-family: "Poppins";
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 170%; /* 61.2px */
+
+      @include responsive(phone) {
+        font-size: 28px;
+        line-height: 100%;
+
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .right-block {
+    &__text {
+      color: var(--grayscale-50, #333);
+
+      /* Poppins/Regular/18 */
+      font-family: "Poppins";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%; /* 28.8px */
+
+      svg {
+        margin-right: 10px;
+      }
+    }
+    &__input {
+      color: var(--grayscale-lightray, #d9d9d9);
+
+      /* Poppins/Regular/16 */
+      font-family: "Poppins";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%; /* 25.6px */
+
+      border: none;
+
+      width: 400px;
+
+      @include responsive(phone) {
+        width: auto;
+      }
+    }
+    &__line {
+      width: 440px;
+      height: 2px;
+
+      margin-top: 20px;
+
+      background: #141414;
+
+      margin-bottom: 40px;
+
+      @include responsive(phone) {
+        width: auto;
+      }
+    }
+    &__follow {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      position: absolute;
+      right: 13%;
+
+      .follow-text {
+        margin-top: 0;
+        margin-bottom: 15px;
+
+        color: var(--grayscale-50, #333);
+
+        /* Poppins/Regular/18 */
+        font-family: "Poppins";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 28.8px */
+      }
+      .social-list {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+
+        padding: 0;
+        margin: 0;
+        &__item {
+          margin-right: 33px;
+        }
+        &__item:nth-child(4) {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+}
