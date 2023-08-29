@@ -1,14 +1,17 @@
 <template>
   <headerDananz />
+  <bannerInfo />
 </template>
 
 <script>
 import headerDananz from "./components/headerDananz.vue";
+import bannerInfo from "./components/bannerInfo.vue";
 
 export default {
   name: "App",
   components: {
     headerDananz,
+    bannerInfo,
   },
 };
 </script>
