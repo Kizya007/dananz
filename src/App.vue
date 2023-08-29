@@ -3,9 +3,11 @@
   <bannerInfo />
   <aboutInfo />
   <serviceInfo />
+  <ProductInfo />
 </template>
 
 <script>
+import ProductInfo from "./components/ProductInfo.vue";
 import serviceInfo from "./components/serviceInfo.vue";
 import aboutInfo from "./components/aboutInfo.vue";
 import headerDananz from "./components/headerDananz.vue";
@@ -18,6 +20,7 @@ export default {
     bannerInfo,
     aboutInfo,
     serviceInfo,
+    ProductInfo,
   },
 };
 </script>

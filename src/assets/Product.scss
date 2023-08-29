@@ -1,0 +1,134 @@
+@import "./mixin.scss";
+
+.product {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  &-choose {
+    width: 100%;
+    &__name {
+      color: var(--grayscale-50, #333);
+
+      /* Poppins/Medium/16 */
+      font-family: "Poppins";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%; /* 24px */
+    }
+    &__text {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      @include responsive(phone) {
+        flex-direction: column;
+        align-items: center;
+      }
+      .title {
+        color: var(--grayscale-50, #333);
+
+        /* Poppins/SemiBold/36 */
+        font-family: "Poppins";
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 170%; /* 61.2px */
+
+        width: 337px;
+
+        margin-bottom: 30px;
+
+        @include responsive(phone) {
+          font-size: 24px;
+          line-height: 100%;
+
+          width: auto;
+        }
+      }
+      .subtitle {
+        color: var(--grayscale-10, #9c9c9c);
+
+        /* Poppins/Regular/18 */
+        font-family: "Poppins";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 28.8px */
+
+        width: 473px;
+
+        display: block;
+
+        @include responsive(phone) {
+            margin-bottom: 20px;
+
+          width: auto;
+        }
+      }
+    }
+  }
+  &-information {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    &__text {
+      display: flex;
+      .number {
+        color: var(--grayscale-50, #333);
+
+        /* Poppins/SemiBold/32 */
+        font-family: "Poppins";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%; /* 44.8px */
+
+        margin-right: 87px;
+
+        @include responsive(phone) {
+          margin-right: 20px;
+        }
+      }
+      .description {
+        &-title {
+          color: var(--grayscale-50, #333);
+
+          /* Poppins/SemiBold/32 */
+          font-family: "Poppins";
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 140%; /* 44.8px */
+
+          margin-bottom: 24px;
+        }
+        &-subtitle {
+          color: var(--grayscale-50, #333);
+
+          /* Poppins/Regular/18 */
+          font-family: "Poppins";
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 160%; /* 28.8px */
+
+          width: 469px;
+
+          margin-bottom: 43px;
+
+          @include responsive(phone) {
+            width: auto;
+          }
+        }
+      }
+    }
+    &__link {
+    }
+  }
+}
