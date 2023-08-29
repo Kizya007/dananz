@@ -4,9 +4,11 @@
   <aboutInfo />
   <serviceInfo />
   <ProductInfo />
+  <materialInfo />
 </template>
 
 <script>
+import materialInfo from "./components/materialInfo.vue";
 import ProductInfo from "./components/ProductInfo.vue";
 import serviceInfo from "./components/serviceInfo.vue";
 import aboutInfo from "./components/aboutInfo.vue";
@@ -21,6 +23,7 @@ export default {
     aboutInfo,
     serviceInfo,
     ProductInfo,
+    materialInfo,
   },
 };
 </script>

@@ -1,0 +1,165 @@
+@import "../assets/mixin.scss";
+.material {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  padding-top: 94px;
+
+  @include responsive(tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left-block {
+    margin-right: 83px;
+
+    @include responsive(desktop) {
+      margin-right: 40px;
+    }
+
+    @include responsive(tablet) {
+      margin-right: 0;
+
+      text-align: center;
+
+      margin-bottom: 20px;
+    }
+    &__name {
+      color: var(--grayscale-70, #141414);
+
+      /* Poppins/Medium/16 */
+      font-family: "Poppins";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%; /* 24px */
+
+      margin-bottom: 20px;
+
+      @include responsive (phone) {
+        margin-bottom: 10px;
+      }
+    }
+    &__title {
+      color: var(--grayscale-50, #333);
+
+      /* Poppins/SemiBold/36 */
+      font-family: "Poppins";
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 170%; /* 61.2px */
+
+      margin-bottom: 10px;
+
+      width: 348px;
+
+      @include responsive(desktop) {
+        width: auto;
+      }
+
+      @include responsive(tablet) {
+        font-size: 26px;
+        line-height: 100%;
+      }
+    }
+    &__subtitle {
+      color: var(--grayscale-10, #9c9c9c);
+
+      /* Poppins/Regular/18 */
+      font-family: "Poppins";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%; /* 28.8px */
+
+      width: 497px;
+
+      margin-bottom: 23px;
+
+      @include responsive(desktop) {
+        width: auto;
+      }
+      @include responsive(tablet) {
+        font-size: 16px;
+        line-height: 100%;
+      }
+    }
+    &__btn {
+      color: var(--grayscale-50, #333);
+
+      /* Poppins/Medium/14 */
+      font-family: "Poppins";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%; /* 21px */
+
+      padding: 14px 32px;
+
+      background-color: transparent;
+
+      border: 1px solid var(--grayscale-30, #3c3c3c);
+
+      cursor: pointer;
+    }
+  }
+  .right-block {
+    display: flex;
+
+    @include responsive(phone) {
+      display: none;
+    }
+    &__one {
+      margin-right: 40px;
+      max-width: 100%;
+      max-height: 100%;
+
+      @include responsive(desktop) {
+        margin-right: 20px;
+      }
+
+      img {
+        max-width: 341.84px;
+        max-height: 392px;
+      }
+    }
+    &__column {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: absolute;
+
+      top: 0;
+      right: -10%;
+
+      .img-two {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .material {
+    .right-block {
+      &__column {
+        position: static;
+
+        .img-two {
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+    }
+  }
+}
