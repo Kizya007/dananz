@@ -9,6 +9,8 @@
 
   position: relative;
 
+  margin-top: 320px;
+
   @include responsive(desktop) {
     display: flex;
     flex-direction: column;

@@ -12,6 +12,8 @@
 
   padding-top: 94px;
 
+  margin-bottom: 120px;
+
   @include responsive(tablet) {
     display: flex;
     flex-direction: column;
