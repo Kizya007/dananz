@@ -44,6 +44,10 @@
       line-height: 150%; /* 24px */
 
       margin-bottom: 20px;
+
+      @include responsive (phone) {
+        margin-bottom: 10px;
+      }
     }
     &__title {
       color: var(--grayscale-50, #333);
