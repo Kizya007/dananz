@@ -1,14 +1,16 @@
+@import "./mixin.scss";
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  max-width: 100%;
-  width: 1440px;
-
-  padding: 64px 120px 0 120px;
+  max-width: 1200px;
 
   margin-bottom: 100px;
+
+  @include responsive(phone) {
+    margin-bottom: 40px;
+  }
 
   &-logo {
     width: 126px;

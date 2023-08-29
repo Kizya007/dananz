@@ -31,6 +31,8 @@
     font-weight: 600;
     line-height: 170%; /* 61.2px */
 
+    padding: 40px 0px;
+
     @include responsive(phone) {
         font-size: 28px;
         line-height: 100%;
@@ -48,7 +50,7 @@
       line-height: 160%; /* 28.8px */
 
       margin-bottom: 20px;
-      margin-top: 38px;
+      
 
       width: 432px;
 

@@ -1,3 +1,4 @@
+@import "./mixin.scss";
 .banner {
   display: flex;
   flex-direction: column;
@@ -50,6 +51,15 @@
     font-style: normal;
     font-weight: 700;
     line-height: 140%; /* 100.8px */
+
+    @include responsive(phone) {
+      font-size: 24px;
+      line-height: 100%;
+
+      margin-bottom: 20px;
+
+      text-align: center;
+    }
   }
   &-title::after {
     content: "";
@@ -163,21 +173,21 @@
     display: flex;
     align-items: center;
     &-title {
-        font-size: 38px;
-        line-height: 100%;
+      font-size: 38px;
+      line-height: 100%;
     }
     &-img {
     }
     &-info {
-        display: none;
-        position: initial;
+      display: none;
+      position: initial;
       &__number {
       }
       &__text {
       }
     }
     &-data {
-        display: none;
+      display: none;
     }
   }
 }

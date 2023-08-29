@@ -21,6 +21,11 @@
     justify-content: center;
   }
 
+  @include responsive(phone) {
+    padding-top: 0;
+
+    margin-bottom: 20px;
+  }
   .left-block {
     margin-right: 83px;
 

@@ -125,12 +125,12 @@
         .name {
           color: var(--grayscale-black, #000);
 
-          /* Poppins/SemiBold/18 */
+          
           font-family: "Poppins";
           font-size: 18px;
           font-style: normal;
           font-weight: 600;
-          line-height: 140%; /* 25.2px */
+          line-height: 140%; 
 
           margin: 0;
         }
@@ -140,7 +140,7 @@
           font-size: 18px;
           font-style: normal;
           font-weight: 400;
-          line-height: 160%; /* 28.8px */
+          line-height: 160%; 
 
           margin: 0;
 
@@ -170,12 +170,11 @@
 
         color: var(--grayscale-10, #9c9c9c);
 
-        /* Poppins/Regular/18 */
         font-family: "Poppins";
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
-        line-height: 160%; /* 28.8px */
+        line-height: 160%;
 
         margin-bottom: 40px;
 
@@ -195,12 +194,11 @@
       &__btn {
         color: var(--grayscale-white, #fff);
 
-        /* Poppins/Medium/14 */
         font-family: "Poppins";
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
-        line-height: 150%; /* 21px */
+        line-height: 150%;
 
         padding: 14px 32px;
 
