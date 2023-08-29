@@ -14,11 +14,7 @@
       stroke-linejoin="round"
     />
     <path
-<<<<<<< HEAD
       d="M16 6.66666L25.3333 16L16 25.3333"
-=======
-      d="M16 6.66663L25.3333 16L16 25.3333"
->>>>>>> product
       stroke="black"
       stroke-width="2"
       stroke-linecap="round"
