@@ -1,5 +1,5 @@
 <template>
-  <headerDananz />
+  <mainHeader />
   <bannerInfo />
   <aboutInfo />
   <serviceInfo />
@@ -16,13 +16,13 @@ import materialInfo from "./components/materialInfo.vue";
 import ProductInfo from "./components/ProductInfo.vue";
 import serviceInfo from "./components/serviceInfo.vue";
 import aboutInfo from "./components/aboutInfo.vue";
-import headerDananz from "./components/headerDananz.vue";
+import mainHeader from "./components/mainHeader.vue";
 import bannerInfo from "./components/bannerInfo.vue";
 
 export default {
   name: "App",
   components: {
-    headerDananz,
+    mainHeader,
     bannerInfo,
     aboutInfo,
     serviceInfo,
