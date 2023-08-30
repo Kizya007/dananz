@@ -1,35 +1,17 @@
 <template>
-  <mainHeader />
-  <bannerInfo />
-  <aboutInfo />
-  <serviceInfo />
-  <ProductInfo />
-  <materialInfo />
-  <contactUs />
-  <footerInfo />
+  <div>
+    <mainHeader/>
+    <router-view />
+  </div>
 </template>
 
 <script>
-import footerInfo from "./components/footerInfo.vue";
-import contactUs from "./components/contactUs.vue";
-import materialInfo from "./components/materialInfo.vue";
-import ProductInfo from "./components/ProductInfo.vue";
-import serviceInfo from "./components/serviceInfo.vue";
-import aboutInfo from "./components/aboutInfo.vue";
-import mainHeader from "./components/mainHeader.vue";
-import bannerInfo from "./components/bannerInfo.vue";
+import mainHeader from "./components/mainHeader.vue"
 
 export default {
   name: "App",
   components: {
     mainHeader,
-    bannerInfo,
-    aboutInfo,
-    serviceInfo,
-    ProductInfo,
-    materialInfo,
-    contactUs,
-    footerInfo,
   },
 };
 </script>
