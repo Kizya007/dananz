@@ -22,6 +22,14 @@
     line-height: 140%; /* 78.4px */
 
     margin-bottom: 36px;
+
+    @include responsive(phone) {
+      width: auto;
+
+      margin-bottom: 20px;
+
+      font-size: 28px;
+    }
   }
 
   &__subtitle {
@@ -38,9 +46,19 @@
     width: 582px;
 
     margin-bottom: 86px;
+
+    @include responsive(phone) {
+      width: auto;
+
+      margin-bottom: 20px;
+    }
   }
 
   &__img {
- 
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
   }
 }

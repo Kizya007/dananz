@@ -9,13 +9,19 @@
       <div class="content-img">
         <img src="../assets/img/achievementImg.png" alt="" />
       </div>
-      <div class="content-list">
-        <p class="content-list__number">350+</p>
-        <p class="content-list__text">Project Completed</p>
-        <p class="content-list__number">23+</p>
-        <p class="content-list__text">Professional Teams</p>
-        <p class="content-list__number">15+</p>
-        <p class="content-list__text">Years Experience</p>
+      <div class="content-lists">
+        <ul class="content-list">
+          <li class="content-list__number">350+</li>
+          <li class="content-list__text">Project Completed</li>
+        </ul>
+        <ul class="content-list">
+          <li class="content-list__number">23+</li>
+          <li class="content-list__text">Professional Teams</li>
+        </ul>
+        <ul class="content-list">
+          <li class="content-list__number">15+</li>
+          <li class="content-list__text">Years Experience</li>
+        </ul>
       </div>
     </div>
   </div>

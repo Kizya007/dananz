@@ -1,1 +1,148 @@
 @import "../assets/mixin.scss";
+.service {
+  max-width: 1200px;
+
+  padding: 0 16px;
+
+  margin: 0 auto;
+
+  margin-bottom: 100px;
+
+  @include responsive(tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &-name {
+    color: var(--grayscale-black, #000);
+
+    /* Poppins/Medium/16 */
+    font-family: "Poppins";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 24px */
+
+    margin-bottom: 20px;
+  }
+  &-title {
+    color: var(--grayscale-50, #333);
+
+    /* Poppins/SemiBold/36 */
+    font-family: "Poppins";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 170%; /* 61.2px */
+
+    margin-bottom: 25px;
+
+    @include responsive(tablet) {
+      font-size: 28px;
+    }
+  }
+  &-subtitle {
+    color: var(--grayscale-10, #9c9c9c);
+
+    /* Poppins/Regular/18 */
+    font-family: "Poppins";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 28.8px */
+
+    margin-bottom: 40px;
+
+    width: 471px;
+
+    @include responsive(tablet) {
+      text-align: center;
+    }
+    @include responsive(phone) {
+      width: auto;
+    }
+  }
+
+  .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include responsive(desktop) {
+      flex-wrap: wrap;
+    }
+    @include responsive(tablet) {
+      flex-direction: column;
+    }
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      list-style-type: none;
+
+      background: var(--grayscale-white, #fff);
+      box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+
+      margin-right: 18px;
+
+      @include responsive(tablet) {
+        margin-right: 0;
+        margin-top: 18px;
+      }
+      &__circle {
+        width: 63px;
+        height: 63px;
+
+        border-radius: 50%;
+
+        background-color: #d9d9d9;
+
+        margin: 20px 0;
+      }
+      &__title {
+        color: var(--grayscale-50, #333);
+
+        /* Poppins/SemiBold/24 */
+        font-family: "Poppins";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%; /* 33.6px */
+
+        margin-bottom: 20px;
+
+        @include responsive(phone) {
+          font-size: 20px;
+        }
+      }
+      &__subtitle {
+        color: var(--grayscale-10, #9c9c9c);
+        text-align: center;
+
+        /* Poppins/Regular/18 */
+        font-family: "Poppins";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 28.8px */
+
+        margin: 0 25px 22px 25px;
+
+        width: 334px;
+
+        @include responsive(phone) {
+          width: auto;
+        }
+      }
+    }
+    &-item:nth-child(3) {
+      margin-right: 0;
+
+      @include responsive(desktop) {
+        margin-top: 18px;
+      }
+    }
+  }
+}
