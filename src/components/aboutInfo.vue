@@ -1,7 +1,7 @@
 <template>
-  <div class="about">
+  <section class="about">
     <div class="up-block">
-      <span class="up-block__name">ABOUT</span>
+      <span class="up-block__subtitle">ABOUT</span>
       <h2 class="up-block__title">
         “We're one of the best furniture agency. Prioritizing customers and
         making purchases easy are the hallmarks of our agency.”
@@ -9,11 +9,11 @@
     </div>
     <div class="bottom-block">
       <img class="bottom-block__img" src="../assets/img/aboutImg.png" alt="" />
-      <div class="reviews-block">
-        <div class="reviews-block__img">
+      <div class="description-block">
+        <div class="description-block__img">
           <img src="../assets/img/aboutReviews.png" alt="" />
         </div>
-        <div class="reviews-block__text">
+        <div class="description-block__text">
           <p class="name">Arga Danaan</p>
           <p class="position">CEO of Dananz</p>
         </div>
@@ -26,7 +26,7 @@
         <button class="right-block__btn">Learn More</button>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>

@@ -26,7 +26,7 @@
     margin-bottom: 40px;
   }
 
-  &-text {
+ &-information {
     width: 883px;
 
     position: absolute;
@@ -49,7 +49,7 @@
       color: var(--grayscale-black, #000);
 
       /* Poppins/Medium/16 */
-      font-family: "Poppins";
+     
       font-size: 16px;
       font-style: normal;
       font-weight: 500;
@@ -78,7 +78,7 @@
       color: var(--grayscale-50, #333);
 
       /* Poppins/SemiBold/36 */
-      font-family: "Poppins";
+     
       font-size: 36px;
       font-style: normal;
       font-weight: 600;
@@ -100,7 +100,7 @@
       color: var(--grayscale-10, #9c9c9c);
 
       /* Poppins/Regular/18 */
-      font-family: "Poppins";
+     
       font-size: 18px;
       font-style: normal;
       font-weight: 400;
@@ -138,7 +138,7 @@
         color: var(--grayscale-50, #333);
 
         /* Poppins/SemiBold/24 */
-        font-family: "Poppins";
+       
         font-size: 24px;
         font-style: normal;
         font-weight: 600;
@@ -154,7 +154,7 @@
         color: var(--grayscale-50, #333);
 
         /* Poppins/SemiBold/24 */
-        font-family: "Poppins";
+       
         font-size: 24px;
         font-style: normal;
         font-weight: 600;
@@ -183,7 +183,7 @@
 
 @media screen and (max-width: 1441px) {
   .service {
-    &-text {
+   &-information {
       left: 0%;
     }
   }

@@ -1,5 +1,5 @@
 <template>
-  <div class="contact">
+  <section class="contact">
     <h2 class="contact-title">
       let's discuss making your interior <br> like a dream place!
     </h2>
@@ -9,7 +9,7 @@
       </p>
       <button class="contact-description__btn">Contact Us</button>
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>

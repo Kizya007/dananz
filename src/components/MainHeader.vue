@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <header class="header">
     <img class="header-logo" src="../assets/img/logo.png" alt="">
     <nav class="navigation">
       <ul class="navigation-list">
@@ -11,7 +11,7 @@
       </ul>
     </nav>
     <button class="header-btn">Menu</button>
-  </div>
+  </header>
 </template>
 
 <style lang="scss" scoped>
