@@ -20,6 +20,10 @@
     padding: 0 16px;
   }
 
+  @include responsive(tablet) {
+    margin-top: 40px;
+  }
+
   @include responsive(phone) {
     margin-top: 40px;
 
