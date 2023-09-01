@@ -5,11 +5,9 @@
   <ProductInfo />
   <materialInfo />
   <contactUs />
-  <footerInfo />
 </template>
 
 <script>
-import footerInfo from "../components/footerInfo.vue";
 import contactUs from "../components/contactUs.vue";
 import materialInfo from "../components/materialInfo.vue";
 import ProductInfo from "../components/ProductInfo.vue";
@@ -26,7 +24,6 @@ export default {
     ProductInfo,
     materialInfo,
     contactUs,
-    footerInfo,
   },
 };
 </script>

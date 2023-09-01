@@ -3,7 +3,6 @@
   <achievementService />
   <ProductInfo />
   <contactUs />
-  <footerInfo />
 </template>
 
 <style lang="scss" scoped></style>
@@ -13,7 +12,6 @@ import baseBanner from "../components/baseBanner.vue";
 import achievementService from "../components/achievementService.vue";
 import ProductInfo from "@/components/ProductInfo.vue";
 import contactUs from "@/components/contactUs.vue";
-import footerInfo from "@/components/footerInfo.vue";
 
 export default {
   name: "ServicePage",
@@ -22,7 +20,6 @@ export default {
     achievementService,
     ProductInfo,
     contactUs,
-    footerInfo,
   },
 };
 </script>

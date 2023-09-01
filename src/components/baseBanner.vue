@@ -1,5 +1,5 @@
 <template>
-  <div class="base-banner">
+  <section class="base-banner">
     <h1 class="base-banner__title">About</h1>
     <p class="base-banner__subtitle">
       It is a long established fact that a reader will be distracted by the
@@ -8,7 +8,7 @@
     <div class="base-banner__img">
       <img src="../assets/img/aboutPageimg.png" alt="" />
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>

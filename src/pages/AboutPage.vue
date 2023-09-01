@@ -3,7 +3,6 @@
   <achievementAbout />
   <aboutService />
   <contactUs />
-  <footerInfo />
 </template>
 
 <style lang="scss" scoped>
@@ -15,7 +14,7 @@ import achievementAbout from "../components/achievementAbout.vue";
 import baseBanner from "../components/baseBanner.vue";
 import aboutService from "../components/aboutService.vue";
 import contactUs from "../components/contactUs.vue";
-import footerInfo from "../components/footerInfo.vue";
+
 
 export default {
   components: {
@@ -23,7 +22,6 @@ export default {
     baseBanner,
     aboutService,
     contactUs,
-    footerInfo,
   },
 };
 </script>

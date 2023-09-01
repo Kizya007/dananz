@@ -1,5 +1,5 @@
 <template>
-  <div class="achievement">
+  <section class="achievement">
     <p class="achievement-name">ACHIEVEMENT</p>
     <div class="contents">
       <div class="content">
@@ -42,7 +42,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>

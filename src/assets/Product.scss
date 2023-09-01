@@ -10,15 +10,22 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  @include responsive(tablet) {
+    margin-bottom: 50px;
+  }
+  @include responsive(phone) {
+    margin-bottom: 20px;
+  }
   &-choose {
     width: 100%;
     &__name {
       color: var(--grayscale-50, #333);
-    
+
       font-size: 16px;
       font-style: normal;
       font-weight: 500;
-      line-height: 150%; 
+      line-height: 150%;
 
       @include responsive(tablet) {
         margin-bottom: 20px;
@@ -40,7 +47,7 @@
         font-size: 36px;
         font-style: normal;
         font-weight: 600;
-        line-height: 170%; 
+        line-height: 170%;
 
         width: 337px;
 
@@ -50,7 +57,6 @@
           font-size: 30px;
 
           width: auto;
-
         }
 
         @include responsive(phone) {
@@ -63,7 +69,6 @@
       .subtitle {
         color: var(--grayscale-10, #9c9c9c);
 
-       
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
@@ -79,7 +84,6 @@
           width: auto;
 
           text-align: center;
-          
         }
 
         @include responsive(phone) {
@@ -99,11 +103,11 @@
       display: flex;
       .number {
         color: var(--grayscale-50, #333);
-      
+
         font-size: 32px;
         font-style: normal;
         font-weight: 600;
-        line-height: 140%; 
+        line-height: 140%;
 
         margin-right: 87px;
 
@@ -122,11 +126,11 @@
       .description {
         &-title {
           color: var(--grayscale-50, #333);
-         
+
           font-size: 32px;
           font-style: normal;
           font-weight: 600;
-          line-height: 140%; 
+          line-height: 140%;
 
           margin-bottom: 24px;
 
@@ -143,11 +147,11 @@
         }
         &-subtitle {
           color: var(--grayscale-50, #333);
-         
+
           font-size: 18px;
           font-style: normal;
           font-weight: 400;
-          line-height: 160%; 
+          line-height: 160%;
 
           width: 469px;
 
