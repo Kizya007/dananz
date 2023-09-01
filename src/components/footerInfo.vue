@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <footer class="footer">
     <div class="left-block">
       <div class="left-block__img">
         <img src="../assets/img/logo.png" alt="" />
@@ -26,7 +26,7 @@
         </ul>
       </div>
     </div>
-  </div>
+  </footer>
 </template>
 
 <style lang="scss" scoped>

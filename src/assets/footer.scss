@@ -14,17 +14,21 @@
     align-items: center;
   }
   .left-block {
+    @include responsive(tablet) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     &__img {
     }
     &__title {
       color: var(--grayscale-50, #333);
 
-      /* Poppins/SemiBold/36 */
-     
       font-size: 36px;
       font-style: normal;
       font-weight: 600;
-      line-height: 170%; /* 61.2px */
+      line-height: 170%;
 
       @include responsive(phone) {
         font-size: 28px;
@@ -38,12 +42,10 @@
     &__text {
       color: var(--grayscale-50, #333);
 
-      /* Poppins/Regular/18 */
-     
       font-size: 18px;
       font-style: normal;
       font-weight: 400;
-      line-height: 160%; /* 28.8px */
+      line-height: 160%;
 
       svg {
         margin-right: 10px;
@@ -52,12 +54,10 @@
     &__input {
       color: var(--grayscale-lightray, #d9d9d9);
 
-      /* Poppins/Regular/16 */
-     
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
-      line-height: 160%; /* 25.6px */
+      line-height: 160%;
 
       border: none;
 
@@ -95,12 +95,10 @@
 
         color: var(--grayscale-50, #333);
 
-        /* Poppins/Regular/18 */
-       
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
-        line-height: 160%; /* 28.8px */
+        line-height: 160%;
       }
       .social-list {
         display: flex;

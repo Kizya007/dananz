@@ -1,5 +1,5 @@
 <template>
-  <div class="material">
+  <section class="material">
     <div class="left-block">
       <p class="left-block__name">MATERIAL</p>
       <h2 class="left-block__title">
@@ -24,7 +24,7 @@
         />
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>
