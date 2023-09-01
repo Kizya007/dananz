@@ -3,7 +3,7 @@
 .service {
   display: flex;
   flex-direction: column;
-
+  align-items: flex-end;
   max-width: 1200px;
   margin: 0 auto;
 
@@ -11,10 +11,12 @@
 
   margin-top: 320px;
 
+  margin-bottom: 160px;
+
   @include responsive(desktop) {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 
     padding: 0 16px;
@@ -38,16 +40,15 @@
     position: absolute;
     top: -268px;
     background-color: #fff;
-    left: -9%;
+    right: 317px;
 
     @include responsive(desktop) {
       position: static;
 
-      top: 0;
-    }
+      max-width: initial;
+      width: 100%;
 
-    @include responsive(tablet) {
-      max-width: 100%;
+      top: 0;
     }
 
     &__name {
@@ -56,7 +57,7 @@
       font-size: 16px;
       font-style: normal;
       font-weight: 500;
-      line-height: 150%; 
+      line-height: 150%;
 
       margin-bottom: 20px;
     }
@@ -127,6 +128,14 @@
 
     margin-bottom: 35px;
 
+    @include responsive(tablet) {
+      margin-bottom: 20px;
+    }
+
+    @include responsive(phone) {
+      margin-bottom: 10px;
+    }
+
     &__text {
       display: flex;
       align-items: center;
@@ -140,6 +149,10 @@
         line-height: 140%;
 
         margin-right: 40px;
+
+        @include responsive(tablet) {
+          font-size: 20px;
+        }
 
         @include responsive(phone) {
           margin-right: 20px;
@@ -158,10 +171,17 @@
 
           line-height: 100%;
         }
+        @include responsive(phone) {
+          font-size: 16px;
+        }
       }
     }
     &__link {
       padding-right: 40px;
+
+      @include responsive(tablet) {
+        padding: 0;
+      }
     }
   }
   &-img {
@@ -176,7 +196,7 @@
 
 @media screen and (max-width: 1441px) {
   .service {
-   &-information {
+    &-information {
       left: 0%;
     }
   }

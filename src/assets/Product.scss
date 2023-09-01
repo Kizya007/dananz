@@ -106,10 +106,14 @@
         margin-right: 87px;
 
         @include responsive(tablet) {
+          font-size: 28px;
+
           margin-right: 50px;
         }
 
         @include responsive(phone) {
+          font-size: 22px;
+
           margin-right: 20px;
         }
       }
@@ -123,20 +127,35 @@
           line-height: 140%; 
 
           margin-bottom: 24px;
+
+          @include responsive(tablet) {
+            font-size: 28px;
+
+            margin-bottom: 16px;
+          }
+          @include responsive(phone) {
+            font-size: 22px;
+
+            margin-bottom: 14px;
+          }
         }
         &-subtitle {
           color: var(--grayscale-50, #333);
-
-          /* Poppins/Regular/18 */
          
           font-size: 18px;
           font-style: normal;
           font-weight: 400;
-          line-height: 160%; /* 28.8px */
+          line-height: 160%; 
 
           width: 469px;
 
           margin-bottom: 43px;
+
+          @include responsive(tablet) {
+            font-size: 16px;
+
+            margin-bottom: 25px;
+          }
 
           @include responsive(phone) {
             width: auto;

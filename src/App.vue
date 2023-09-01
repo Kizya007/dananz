@@ -1,35 +1,35 @@
 <template>
-  <mainHeader />
-  <bannerInfo />
-  <aboutInfo />
-  <serviceInfo />
+  <MainHeader />
+  <BannerInfo />
+  <AboutInfo />
+  <ServiceInfo />
   <ProductInfo />
-  <materialInfo />
-  <contactUs />
-  <footerInfo />
+  <MaterialInfo />
+  <ContactUs />
+  <FooterInfo />
 </template>
 
 <script>
-import footerInfo from "./components/footerInfo.vue";
-import contactUs from "./components/contactUs.vue";
-import materialInfo from "./components/materialInfo.vue";
+import FooterInfo from "./components/FooterInfo.vue";
+import ContactUs from "./components/ContactUs.vue";
+import MaterialInfo from "./components/MaterialInfo.vue";
 import ProductInfo from "./components/ProductInfo.vue";
-import serviceInfo from "./components/serviceInfo.vue";
-import aboutInfo from "./components/aboutInfo.vue";
-import mainHeader from "./components/mainHeader.vue";
-import bannerInfo from "./components/bannerInfo.vue";
+import ServiceInfo from "./components/ServiceInfo.vue";
+import AboutInfo from "./components/AboutInfo.vue";
+import MainHeader from "./components/MainHeader.vue";
+import BannerInfo from "./components/BannerInfo.vue";
 
 export default {
   name: "App",
   components: {
-    mainHeader,
-    bannerInfo,
-    aboutInfo,
-    serviceInfo,
+    MainHeader,
+    BannerInfo,
+    AboutInfo,
+    ServiceInfo,
     ProductInfo,
-    materialInfo,
-    contactUs,
-    footerInfo,
+    MaterialInfo,
+    ContactUs,
+    FooterInfo,
   },
 };
 </script>
