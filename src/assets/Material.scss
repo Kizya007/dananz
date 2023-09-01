@@ -19,6 +19,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    margin-bottom: 40px;
   }
 
   @include responsive(phone) {
@@ -40,16 +42,17 @@
 
       margin-bottom: 20px;
     }
+
+    @include responsive(phone) {
+      margin: 0;
+    }
     &__name {
       color: var(--grayscale-70, #141414);
 
-      /* Poppins/Medium/16 */
-      font-family: "Poppins";
       font-size: 16px;
       font-style: normal;
       font-weight: 500;
-      line-height: 150%; /* 24px */
-
+      line-height: 150%; 
       margin-bottom: 20px;
 
       @include responsive (phone) {
@@ -59,12 +62,10 @@
     &__title {
       color: var(--grayscale-50, #333);
 
-      /* Poppins/SemiBold/36 */
-      font-family: "Poppins";
-      font-size: 36px;
+          font-size: 36px;
       font-style: normal;
       font-weight: 600;
-      line-height: 170%; /* 61.2px */
+      line-height: 170%; 
 
       margin-bottom: 10px;
 
@@ -81,13 +82,11 @@
     }
     &__subtitle {
       color: var(--grayscale-10, #9c9c9c);
-
-      /* Poppins/Regular/18 */
-      font-family: "Poppins";
+     
       font-size: 18px;
       font-style: normal;
       font-weight: 400;
-      line-height: 160%; /* 28.8px */
+      line-height: 160%; 
 
       width: 497px;
 
@@ -103,13 +102,11 @@
     }
     &__btn {
       color: var(--grayscale-50, #333);
-
-      /* Poppins/Medium/14 */
-      font-family: "Poppins";
+     
       font-size: 14px;
       font-style: normal;
       font-weight: 500;
-      line-height: 150%; /* 21px */
+      line-height: 150%; 
 
       padding: 14px 32px;
 

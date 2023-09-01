@@ -1,5 +1,5 @@
 <template>
-  <div class="product">
+  <section class="product">
     <div class="product-choose">
       <p class="product-choose__name">PRODUCT</p>
       <div class="product-choose__text">
@@ -62,7 +62,7 @@
       </div>
       <a class="product-information__link" href=""><arrowRight /></a>
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>

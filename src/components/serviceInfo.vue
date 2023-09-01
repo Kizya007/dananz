@@ -1,11 +1,11 @@
 <template>
-  <div class="service">
-    <div class="service-text">
-      <span class="service-text__name">SERVICE</span>
-      <h2 class="service-text__title">
+  <section class="service">
+    <div class="service-information">
+      <span class="service-information__name">SERVICE</span>
+      <h2 class="service-information__title">
         attractive furniture with the best quality.
       </h2>
-      <p class="service-text__subtitle">
+      <p class="service-information__subtitle">
         Customize your interior design into a dream place with the best
         designers and quality furniture. We try our best to fulfill your
         expectations.
@@ -35,7 +35,7 @@
     <div class="service-img">
       <img src="../assets/img/serviceImg.png" alt="" />
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>

@@ -1,5 +1,5 @@
 <template>
-  <div class="banner">
+  <section class="banner">
     <h1 class="banner-title">
       Design your <br />
       interor with high <br />
@@ -16,11 +16,11 @@
       <span class="banner-info__number">15+</span>
       <span class="banner-info__text">Years Experience</span>
     </div>
-    <span class="banner-data"
+    <span class="banner-date"
       >2022 <br />
       ALL RIGHT RESERVED</span
     >
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>

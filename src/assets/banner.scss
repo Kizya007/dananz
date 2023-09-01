@@ -3,44 +3,56 @@
   display: flex;
   flex-direction: column;
 
-  width: 1200px;
-  max-width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   
   position: relative;
 
+  margin-bottom: 160px;
+
   @include responsive(desktop) {
     padding: 0 16px;
+  }
+  @include responsive(tablet) {
+    margin-bottom: 40px;
+  }
+  @include responsive(phone) {
+    margin-bottom: 20px;
   }
 
   &-img {
     max-width: 100%;
     max-height: 100%;
 
-    margin-bottom: 80px;
-
     img {
       width: 100%;
-      height: 513px;
+      max-height: 513px;
     }
   }
 
-  &-data {
+  &-date {
     color: var(--grayscale-50, #333);
 
-    /* Poppins/Medium/18 */
-    font-family: "Poppins";
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
-    line-height: 150%; /* 27px */
+    line-height: 150%;
 
     position: absolute;
 
     transform: rotate(-90deg);
 
-    right: -6%;
-    top: 21%;
+    right: -69px;
+    top: 170px;
+
+    @include responsive(desktop) {
+      right: -51px;
+      top: 136px;
+    }
+
+    @include responsive(tablet) {
+      display: none;
+    }
   }
 
   &-title {
@@ -49,12 +61,24 @@
 
     color: var(--grayscale-50, #333);
 
-    /* Poppins/Bold/72 */
-    font-family: "Poppins";
     font-size: 72px;
     font-style: normal;
     font-weight: 700;
-    line-height: 140%; /* 100.8px */
+    line-height: 140%;
+
+    margin-bottom: 46px;
+
+    @include responsive(desktop) {
+      font-size: 50px;
+    }
+
+    @include responsive(tablet) {
+      text-align: center;
+
+      margin-bottom: 20px;
+
+      font-size: 30px;
+    }
 
     @include responsive(tablet) {
       text-align: center;
@@ -75,12 +99,15 @@
     top: 15%;
     height: 2px;
     background: #000;
-  }
-  &-title::after {
+
     left: 43%;
     right: -1000%;
 
     width: 683px;
+
+    @include responsive(desktop) {
+      display: none;
+    }
   }
   &-info {
     display: flex;
@@ -91,37 +118,54 @@
 
     position: absolute;
 
-    top: 18%;
-    right: 12%;
+    top: 137px;
+    right: 142px;
+
+    padding: 40px 47px;
+
+    @include responsive(tablet) {
+      top: 146px;
+      padding: 10px;
+
+      align-items: flex-start;
+    }
+
+    @include responsive(phone) {
+      display: none;
+    }
 
     &__number {
       color: var(--grayscale-white, #fff);
 
-      /* Poppins/Regular/52 */
-      font-family: "Poppins";
       font-size: 52px;
       font-style: normal;
       font-weight: 400;
-      line-height: 160%; /* 83.2px */
-    }
+      line-height: 160%;
 
-    &__number:nth-child(1) {
-      padding-top: 40px;
+      @include responsive(tablet) {
+        font-size: 20px;
+        line-height: 100%;
+
+        margin-bottom: 10px;
+      }
     }
 
     &__text {
       color: var(--grayscale-white, #fff);
 
-      /* Poppins/Regular/16 */
-      font-family: "Poppins";
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
-      line-height: 160%; /* 25.6px */
-
-      padding: 0 47px;
+      line-height: 160%;
 
       margin-bottom: 57px;
+
+      @include responsive(tablet) {
+        font-size: 14px;
+        line-height: 100%;
+
+        margin-bottom: 20px;
+      }
     }
 
     &__text:nth-child(3) {
@@ -129,73 +173,6 @@
     }
     span {
       display: block;
-    }
-  }
-}
-
-@media screen and (max-width: 1230px) {
-  .banner {
-    &-title {
-      font-size: 60px;
-    }
-
-    &-title::after {
-      display: none;
-    }
-    &-img {
-      img {
-        height: auto;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .banner {
-    &-title {
-      font-size: 50px;
-    }
-    &-info {
-      &__number {
-        font-size: 30px;
-        line-height: 100%;
-      }
-      &__number:nth-child(1) {
-        padding-top: 20px;
-      }
-      &__text {
-        padding: 0 27px;
-      }
-      &__text:nth-child(3) {
-        padding-bottom: 24px;
-        margin-bottom: 0px;
-      }
-    }
-    &-data {
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .banner {
-    display: flex;
-    align-items: center;
-    &-title {
-      font-size: 38px;
-      line-height: 100%;
-    }
-    &-img {
-    }
-    &-info {
-      display: none;
-      position: initial;
-      &__number {
-      }
-      &__text {
-      }
-    }
-    &-data {
-      display: none;
     }
   }
 }

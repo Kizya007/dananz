@@ -14,39 +14,47 @@
     width: 100%;
     &__name {
       color: var(--grayscale-50, #333);
-
-      /* Poppins/Medium/16 */
-      font-family: "Poppins";
+    
       font-size: 16px;
       font-style: normal;
       font-weight: 500;
-      line-height: 150%; /* 24px */
+      line-height: 150%; 
+
+      @include responsive(tablet) {
+        margin-bottom: 20px;
+      }
     }
     &__text {
       display: flex;
       justify-content: space-between;
       width: 100%;
 
-      @include responsive(phone) {
+      @include responsive(tablet) {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
       }
       .title {
         color: var(--grayscale-50, #333);
 
-        /* Poppins/SemiBold/36 */
-        font-family: "Poppins";
         font-size: 36px;
         font-style: normal;
         font-weight: 600;
-        line-height: 170%; /* 61.2px */
+        line-height: 170%; 
 
         width: 337px;
 
         margin-bottom: 30px;
 
+        @include responsive(tablet) {
+          font-size: 30px;
+
+          width: auto;
+
+        }
+
         @include responsive(phone) {
-          font-size: 24px;
+          font-size: 22px;
           line-height: 100%;
 
           width: auto;
@@ -55,8 +63,7 @@
       .subtitle {
         color: var(--grayscale-10, #9c9c9c);
 
-        /* Poppins/Regular/18 */
-        font-family: "Poppins";
+       
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
@@ -65,6 +72,15 @@
         width: 473px;
 
         display: block;
+
+        @include responsive(tablet) {
+          font-size: 16px;
+
+          width: auto;
+
+          text-align: center;
+          
+        }
 
         @include responsive(phone) {
           margin-bottom: 20px;
@@ -83,50 +99,65 @@
       display: flex;
       .number {
         color: var(--grayscale-50, #333);
-
-        /* Poppins/SemiBold/32 */
-        font-family: "Poppins";
+      
         font-size: 32px;
         font-style: normal;
         font-weight: 600;
-        line-height: 140%; /* 44.8px */
+        line-height: 140%; 
 
         margin-right: 87px;
 
         @include responsive(tablet) {
-          margin-right: 40px;
+          font-size: 28px;
+
+          margin-right: 50px;
         }
 
         @include responsive(phone) {
+          font-size: 22px;
+
           margin-right: 20px;
         }
       }
       .description {
         &-title {
           color: var(--grayscale-50, #333);
-
-          /* Poppins/SemiBold/32 */
-          font-family: "Poppins";
+         
           font-size: 32px;
           font-style: normal;
           font-weight: 600;
-          line-height: 140%; /* 44.8px */
+          line-height: 140%; 
 
           margin-bottom: 24px;
+
+          @include responsive(tablet) {
+            font-size: 28px;
+
+            margin-bottom: 16px;
+          }
+          @include responsive(phone) {
+            font-size: 22px;
+
+            margin-bottom: 14px;
+          }
         }
         &-subtitle {
           color: var(--grayscale-50, #333);
-
-          /* Poppins/Regular/18 */
-          font-family: "Poppins";
+         
           font-size: 18px;
           font-style: normal;
           font-weight: 400;
-          line-height: 160%; /* 28.8px */
+          line-height: 160%; 
 
           width: 469px;
 
           margin-bottom: 43px;
+
+          @include responsive(tablet) {
+            font-size: 16px;
+
+            margin-bottom: 25px;
+          }
 
           @include responsive(phone) {
             width: auto;
