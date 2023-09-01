@@ -10,9 +10,14 @@
 
   margin-bottom: 100px;
 
-  @include responsive(phone) {
-    margin-bottom: 40px;
+  @include responsive(desktop) {
+    padding: 0 16px;
   }
+
+  @include responsive(tablet) {
+    margin-bottom: 20px;
+  }
+
 
   &-logo {
     width: 126px;
