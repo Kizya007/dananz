@@ -2,6 +2,7 @@
   <div>
     <mainHeader />
     <router-view />
+    <contactUS />
     <footerInfo />
   </div>
 </template>
@@ -9,12 +10,14 @@
 <script>
 import mainHeader from "./components/mainHeader.vue";
 import footerInfo from "./components/footerInfo.vue";
+import contactUS from "./components/contactUs.vue";
 
 export default {
   name: "App",
   components: {
     mainHeader,
     footerInfo,
+    contactUS,
   },
 };
 </script>
