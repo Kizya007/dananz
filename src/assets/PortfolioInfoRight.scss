@@ -1,0 +1,225 @@
+@import "../assets/mixin.scss";
+.portfolio {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  position: relative;
+
+  padding: 0 16px;
+  .up-block {
+    max-width: 100%;
+
+    &__subtitle {
+      display: inline-block;
+      position: relative;
+
+      color: var(--grayscale-black, #000);
+
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+
+      margin-bottom: 20px;
+    }
+
+    &__subtitle::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      height: 2px;
+      background: #000;
+      left: 150%;
+      right: -1000%;
+
+      max-width: 529px;
+
+      @include responsive(tablet) {
+        display: none;
+      }
+    }
+    &__title {
+      color: var(--grayscale-50, #333);
+
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+
+      margin: 0;
+
+      margin-bottom: 60px;
+
+      @include responsive(tablet) {
+        font-size: 26px;
+        line-height: 100%;
+
+        text-align: center;
+      }
+
+      @include responsive(phone) {
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .bottom-block {
+    display: flex;
+    align-items: center;
+
+    max-width: 100%;
+
+    position: relative;
+
+    @include responsive(desktop) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &__img {
+      width: 100%;
+      max-width: 885px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .description-block {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      position: absolute;
+
+      background: var(--grayscale-white, #fff);
+
+      top: 7%;
+      right: 10%;
+
+      @include responsive(tablet) {
+        position: static;
+      }
+
+      &__img {
+        margin-right: 20px;
+        max-width: 51px;
+        max-height: 56px;
+
+        margin: 17px 0 17px 20px;
+
+        margin-right: 20px;
+
+        img {
+          max-width: 51px;
+          max-height: 56px;
+        }
+      }
+      &__text {
+        .name {
+          color: var(--grayscale-black, #000);
+
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 140%;
+
+          margin: 0;
+        }
+        .position {
+          color: var(--grayscale-10, #9c9c9c);
+
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 160%;
+
+          margin: 0;
+
+          padding-right: 52px;
+        }
+      }
+    }
+    .right-block {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+
+      margin-left: 94px;
+
+      max-width: 100%;
+
+      &__title {
+        margin-bottom: 20px;
+
+        margin-top: 40px;
+
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+      }
+
+      @include responsive(desktop) {
+        margin-left: 0;
+
+        align-items: center;
+      }
+
+      @include responsive(tablet) {
+        align-items: center;
+        justify-content: center;
+
+        margin-left: 0;
+      }
+
+      &__text {
+        color: var(--grayscale-10, #9c9c9c);
+
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+
+        margin-bottom: 40px;
+
+        width: 223px;
+
+        @include responsive(tablet) {
+          width: 450px;
+          margin: 0;
+
+          margin-bottom: 20px;
+
+          text-align: center;
+        }
+
+        @include responsive(phone) {
+          width: auto;
+        }
+      }
+      &__btn {
+        color: var(--grayscale-white, #fff);
+
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+
+        padding: 14px 32px;
+
+        background: var(--primary-blue-100, #2c3878);
+
+        cursor: pointer;
+
+        border-radius: 6px;
+      }
+    }
+  }
+}

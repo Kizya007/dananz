@@ -21,7 +21,9 @@
           </p>
         </div>
       </div>
-      <a class="product-information__link" href=""><arrowRight /></a>
+      <a class="product-information__link" href=""
+        ><router-link to="/portfolio"><arrowRight /></router-link
+      ></a>
     </div>
     <div class="product-information">
       <div class="product-information__text">
@@ -34,7 +36,9 @@
           </p>
         </div>
       </div>
-      <a class="product-information__link" href=""><arrowRight /></a>
+      <a class="product-information__link" href=""
+        ><router-link to="/portfolio"><arrowRight /></router-link
+      ></a>
     </div>
     <div class="product-information">
       <div class="product-information__text">
@@ -47,7 +51,9 @@
           </p>
         </div>
       </div>
-      <a class="product-information__link" href=""><arrowRight /></a>
+      <a class="product-information__link" href=""
+        ><router-link to="/portfolio"><arrowRight /></router-link
+      ></a>
     </div>
     <div class="product-information">
       <div class="product-information__text">
@@ -60,7 +66,9 @@
           </p>
         </div>
       </div>
-      <a class="product-information__link" href=""><arrowRight /></a>
+      <a class="product-information__link" href=""
+        ><router-link to="/portfolio"><arrowRight /></router-link
+      ></a>
     </div>
   </section>
 </template>
