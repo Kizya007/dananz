@@ -1,6 +1,6 @@
 @import "./mixin.scss";
 
-.product {
+.products {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 16px;
@@ -38,7 +38,7 @@
 
       @include responsive(tablet) {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
       }
       .title {
@@ -72,13 +72,15 @@
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
-        line-height: 160%; /* 28.8px */
+        line-height: 160%; 
 
         width: 473px;
 
         display: block;
 
         @include responsive(tablet) {
+          margin-bottom: 20px;
+
           font-size: 16px;
 
           width: auto;
@@ -94,7 +96,10 @@
       }
     }
   }
-  &-information {
+  &-list {
+    width: 100%;
+  }
+  .product {
     display: flex;
     justify-content: space-between;
 
