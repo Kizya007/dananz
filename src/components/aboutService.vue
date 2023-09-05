@@ -9,7 +9,7 @@
     <ul class="cards">
       <li class="cards-item">
         <p class="cards-item__circle"></p>
-        <p class="cards-item__title">High Quality</p>
+        <h3 class="cards-item__title">High Quality</h3>
         <p class="cards-item__subtitle">
           Customize your interior design into a dream place with the best
           designers and quality furniture. We try our best to fulfill your
@@ -18,7 +18,7 @@
       </li>
       <li class="cards-item">
         <p class="cards-item__circle"></p>
-        <p class="cards-item__title">Professional Designer</p>
+        <h3 class="cards-item__title">Professional Designer</h3>
         <p class="cards-item__subtitle">
           Customize your interior design into a dream place with the best
           designers and quality furniture. We try our best to fulfill your
@@ -27,7 +27,7 @@
       </li>
       <li class="cards-item">
         <p class="cards-item__circle"></p>
-        <p class="cards-item__title">The Best Services</p>
+        <h3 class="cards-item__title">The Best Services</h3>
         <p class="cards-item__subtitle">
           Customize your interior design into a dream place with the best
           designers and quality furniture. We try our best to fulfill your
