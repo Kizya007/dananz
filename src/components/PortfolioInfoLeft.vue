@@ -20,7 +20,7 @@
           Online learning with us does not interfere with your daily life.
           because learning can be done anytime and anywhere.
         </p>
-        <button class="left-block__btn">Learn More</button>
+        <button class="left-block__btn"><router-link to="/detailsportfolio">Learn more</router-link></button>
       </div>
     </div>
   </section>

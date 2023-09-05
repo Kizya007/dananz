@@ -3,6 +3,7 @@ import HomePage from "./pages/HomePage.vue";
 import AboutPage from "./pages/AboutPage.vue";
 import ServicePage from "./pages/ServicePage.vue";
 import PortfolioPage from "./pages/PortfolioPage.vue";
+import DetailsPortfolioPage from "./pages/DetailsPortfolioPage.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -22,6 +23,10 @@ const router = createRouter({
     {
       path: "/portfolio",
       component: PortfolioPage,
+    },
+    {
+      path: "/detailsportfolio",
+      component: DetailsPortfolioPage,
     },
   ],
 });
