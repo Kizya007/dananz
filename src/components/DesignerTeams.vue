@@ -1,8 +1,8 @@
 <template>
-  <section class="designer">
-    <p class="designer-name">Designer</p>
-    <h2 class="designer-title">Creative Person</h2>
-    <p class="designer-text">
+  <section class="section-designer">
+    <p class="section-designer__name">designer</p>
+    <h2 class="section-designer__title">Creative Person</h2>
+    <p class="section-designer__text">
       Customize your interior design into a dream place with the best designers
       and quality furniture. We try our best to fulfill your expectations.
     </p>

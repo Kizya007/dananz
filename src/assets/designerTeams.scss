@@ -1,5 +1,5 @@
 @import "./mixin.scss";
-.designer {
+.section-designer {
   display: flex;
   flex-direction: column;
 
@@ -22,7 +22,7 @@
     justify-content: center;
   }
 
-  &-name {
+  &__name {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -35,7 +35,7 @@
       line-height: 100%;
     }
   }
-  &-title {
+  &__title {
     font-size: 36px;
     font-style: normal;
     font-weight: 600;
@@ -54,7 +54,7 @@
       line-height: 100%;
     }
   }
-  &-text {
+  &__text {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
