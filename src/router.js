@@ -3,7 +3,8 @@ import HomePage from "./pages/HomePage.vue";
 import AboutPage from "./pages/AboutPage.vue";
 import ServicePage from "./pages/ServicePage.vue";
 import ContactUsPage from "./pages/ContactUsPage.vue";
-import OurTeamsPage from "./pages/OurTeamsPage.vue"
+import OurTeamsPage from "./pages/OurTeamsPage.vue";
+import PortfolioPage from "./pages/PortfolioPage.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -25,6 +26,7 @@ const router = createRouter({
       component: OurTeamsPage,
     },
     { path: "/contactus", component: ContactUsPage },
+    { path: "/portfolio", component: PortfolioPage },
   ],
 });
 export default router;
