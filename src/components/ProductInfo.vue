@@ -22,7 +22,7 @@
             </p>
           </div>
         </div>
-        <a class="product__link" href=""><arrowRight /></a>
+        <router-link to="/portfolio"><arrowRight /></router-link>
       </li>
       <li class="product">
         <div class="product__text">
@@ -35,7 +35,7 @@
             </p>
           </div>
         </div>
-        <a class="product__link" href=""><arrowRight /></a>
+        <router-link to="/portfolio"><arrowRight /></router-link>
       </li>
       <li class="product">
         <div class="product__text">
@@ -48,7 +48,7 @@
             </p>
           </div>
         </div>
-        <a class="product__link" href=""><arrowRight /></a>
+        <router-link to="/portfolio"><arrowRight /></router-link>
       </li>
       <li class="product">
         <div class="product__text">
@@ -61,7 +61,7 @@
             </p>
           </div>
         </div>
-        <a class="product__link" href=""><arrowRight /></a>
+        <router-link to="/portfolio"><arrowRight /></router-link>
       </li>
     </ul>
   </section>

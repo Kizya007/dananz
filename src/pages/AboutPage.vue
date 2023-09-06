@@ -1,5 +1,4 @@
 <template>
-  <baseBanner />
   <achievementAbout />
   <aboutService />
 </template>
@@ -10,13 +9,11 @@
 
 <script>
 import achievementAbout from "../components/achievementAbout.vue";
-import baseBanner from "../components/baseBanner.vue";
 import aboutService from "../components/aboutService.vue";
 
 export default {
   components: {
     achievementAbout,
-    baseBanner,
     aboutService,
   },
 };

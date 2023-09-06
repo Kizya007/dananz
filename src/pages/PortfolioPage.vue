@@ -3,7 +3,6 @@
   <PortfolioInfoRight />
   <PortfolioInfoLeft />
   <PortfolioInfoRight />
-  <aboutInfo />
 </template>
 
 <script>
