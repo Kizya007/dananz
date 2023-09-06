@@ -5,6 +5,7 @@ import ServicePage from "./pages/ServicePage.vue";
 import ContactUsPage from "./pages/ContactUsPage.vue";
 import OurTeamsPage from "./pages/OurTeamsPage.vue";
 import PortfolioPage from "./pages/PortfolioPage.vue";
+import DetailsPortfolioPage from "./pages/DetailsPortfolioPage.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -27,6 +28,10 @@ const router = createRouter({
     },
     { path: "/contactus", component: ContactUsPage },
     { path: "/portfolio", component: PortfolioPage },
+    {
+      path: "/detailsportfolio",
+      component: DetailsPortfolioPage,
+    },
   ],
 });
 export default router;
