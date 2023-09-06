@@ -1,22 +1,20 @@
 <template>
   <baseBanner />
-  <achievementAbout />
+  <DesignerTeams />
   <aboutService />
 </template>
 
-<style lang="scss" scoped>
-@import "../assets/aboutPage.scss";
-</style>
+<style lang="scss" scoped></style>
 
 <script>
-import achievementAbout from "../components/achievementAbout.vue";
 import baseBanner from "../components/baseBanner.vue";
+import DesignerTeams from "../components/DesignerTeams.vue";
 import aboutService from "../components/aboutService.vue";
 
 export default {
   components: {
-    achievementAbout,
     baseBanner,
+    DesignerTeams,
     aboutService,
   },
 };
