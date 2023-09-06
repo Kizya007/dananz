@@ -20,7 +20,7 @@
   &-choose {
     width: 100%;
     &__name {
-      color: var(--grayscale-50, #333);
+      color: #333;
 
       font-size: 16px;
       font-style: normal;
@@ -42,7 +42,7 @@
         justify-content: center;
       }
       .title {
-        color: var(--grayscale-50, #333);
+        color: #333;
 
         font-size: 36px;
         font-style: normal;
@@ -67,12 +67,12 @@
         }
       }
       .subtitle {
-        color: var(--grayscale-10, #9c9c9c);
+        color: #9c9c9c;
 
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
-        line-height: 160%; 
+        line-height: 160%;
 
         width: 473px;
 
@@ -107,7 +107,7 @@
     &__text {
       display: flex;
       .number {
-        color: var(--grayscale-50, #333);
+        color: #333;
 
         font-size: 32px;
         font-style: normal;
@@ -130,7 +130,7 @@
       }
       .description {
         &-title {
-          color: var(--grayscale-50, #333);
+          color: #333;
 
           font-size: 32px;
           font-style: normal;
@@ -151,7 +151,7 @@
           }
         }
         &-subtitle {
-          color: var(--grayscale-50, #333);
+          color: #333;
 
           font-size: 18px;
           font-style: normal;
