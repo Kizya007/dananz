@@ -5,9 +5,12 @@
 
   max-width: 1200px;
 
-  margin: 0 auto;
+  margin: 0 auto 100px;
 
-  margin-bottom: 100px;
+  @include responsive(desktop) {
+    justify-content: center;
+    align-items: center;
+  }
 
   @include responsive(tablet) {
     margin-bottom: 40px;
@@ -63,6 +66,8 @@
 
     margin-bottom: 79px;
 
+    text-align: center;
+
     @include responsive(tablet) {
       font-size: 14px;
 
@@ -78,6 +83,11 @@
   .cards {
     display: flex;
     flex-wrap: wrap;
+
+    @include responsive(desktop) {
+      justify-content: center;
+      align-items: center;
+    }
 
     @include responsive(phone) {
       flex-wrap: nowrap;
@@ -155,6 +165,9 @@
       }
       @include responsive(tablet) {
         margin-right: 16px;
+      }
+      @include responsive(phone) {
+        margin-right: 0;
       }
     }
   }
