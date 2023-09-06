@@ -3,6 +3,7 @@ import HomePage from "./pages/HomePage.vue";
 import AboutPage from "./pages/AboutPage.vue";
 import ServicePage from "./pages/ServicePage.vue";
 import ContactUsPage from "./pages/ContactUsPage.vue";
+import OurTeamsPage from "./pages/OurTeamsPage.vue"
 
 const router = createRouter({
   history: createWebHistory(),
