@@ -1,0 +1,214 @@
+@import "../assets/mixin.scss";
+.registration {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 100px;
+
+  @include responsive(tablet) {
+    margin-bottom: 40px;
+  }
+
+  @include responsive(phone) {
+    margin-bottom: 20px;
+  }
+
+  &-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+
+    width: 840px;
+
+    @include responsive(tablet) {
+      width: 600px;
+    }
+
+    @include responsive(phone) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      width: auto;
+    }
+    .name {
+      max-width: 413px;
+
+      &-title {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+
+        margin-bottom: 10px;
+      }
+      &-input {
+        color: #9c9c9c;
+
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+
+        width: 413px;
+
+        padding: 18px 0px 18px 32px;
+
+        margin-bottom: 10px;
+
+        border: 1px solid var(--grayscale-10, #9c9c9c);
+        background: var(--grayscale-white, #fff);
+
+        @include responsive (tablet) {
+          width: 286px;
+        }
+      }
+    }
+  }
+  .email {
+    
+    margin-bottom: 20px;
+
+    &-title {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+
+      margin-bottom: 10px;
+    }
+    &-input {
+      color: #9c9c9c;
+
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%;
+
+      padding: 18px 0 18px 32px;
+
+      width: 840px;
+
+      border: 1px solid var(--grayscale-10, #9c9c9c);
+      background: var(--grayscale-white, #fff);
+
+      @include responsive(tablet) {
+        width: 600px;
+      }
+      
+      @include responsive(phone) {
+        width: 286px;
+
+        max-width: 100%
+      }
+    }
+  }
+
+  .phone {
+    position: relative;
+
+    margin-bottom: 20px;
+
+    &-title {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+
+      margin-bottom: 10px;
+    }
+
+    &-input {
+      color: #9c9c9c;
+
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%;
+
+      padding: 18px 0 18px 104px;
+
+      width: 840px;
+
+      border: 1px solid var(--grayscale-10, #9c9c9c);
+      background: var(--grayscale-white, #fff);
+
+      @include responsive(tablet) {
+        width: 600px;
+      }
+      @include responsive(phone) {
+        width: 286px;
+      }
+    }
+    &-block {
+      position: absolute;
+
+      top: 55px;
+      left: 32px;
+
+      display: flex;
+      align-items: center;
+
+      cursor: pointer;
+      &__country {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+      }
+    }
+  }
+  .message {
+    margin-bottom: 40px;
+
+    &-title {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+
+      margin-bottom: 10px;
+    }
+    &-input {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%;
+
+      padding: 20px 0 132px 30px;
+
+      width: 840px;
+
+      border: 1px solid var(--grayscale-10, #9c9c9c);
+      background: var(--grayscale-white, #fff);
+
+
+      @include responsive(tablet) {
+        width: 600px;
+      }
+      @include responsive(phone) {
+        width: 286px;
+
+        padding-bottom: 60px;
+      }
+    }
+  }
+  &-btn {
+    padding: 14px 32px;
+
+    color: #fff;
+
+    border: 1px solid var(--grayscale-30, #3c3c3c);
+    background: var(--primary-blue-100, #2c3878);
+
+    cursor: pointer;
+  }
+}

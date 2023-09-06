@@ -15,7 +15,9 @@
         <li class="navigation-list__item">
           <router-link to="/ourteams">Our teams</router-link>
         </li>
-        <li class="navigation-list__item"><a href="">Contact Us</a></li>
+        <li class="navigation-list__item">
+          <router-link to="/contactus">Contact Us</router-link>
+        </li>
       </ul>
     </nav>
     <button class="header-btn">Menu</button>

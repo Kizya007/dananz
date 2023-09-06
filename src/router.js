@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "./pages/HomePage.vue";
 import AboutPage from "./pages/AboutPage.vue";
 import ServicePage from "./pages/ServicePage.vue";
-import OurTeamsPage from "./pages/OurTeamsPage.vue";
+import ContactUsPage from "./pages/ContactUsPage.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -23,6 +23,7 @@ const router = createRouter({
       path: "/ourteams",
       component: OurTeamsPage,
     },
+    { path: "/contactus", component: ContactUsPage },
   ],
 });
 export default router;
