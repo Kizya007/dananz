@@ -35,7 +35,7 @@
     }
   }
   &-title {
-    color:  #000;
+    color: #000;
 
     font-family: "Poppins";
     font-size: 36px;
@@ -64,6 +64,8 @@
     }
 
     &-img {
+      position: relative;
+
       margin-right: 59px;
 
       img {
@@ -99,11 +101,17 @@
 
         padding: 0;
 
-        width: 600px;
+        position: absolute;
+        right: 37px;
+
+        width: 500px;
       }
 
       @include responsive(phone) {
         flex-direction: column;
+
+        position: absolute;
+        right: 16px;
 
         width: auto;
       }
@@ -122,9 +130,12 @@
 
           width: auto;
         }
+        @include responsive(phone) {
+          padding: 6px;
+        }
 
         .number {
-          color:  #fff;
+          color: #fff;
 
           font-family: "Poppins";
           font-size: 52px;
@@ -133,14 +144,14 @@
           line-height: 160%;
 
           @include responsive(tablet) {
-            font-size: 32px;
+            font-size: 28px;
           }
           @include responsive(phone) {
-            font-size: 18px;
+            font-size: 12px;
           }
         }
         .text {
-          color:  #fff;
+          color: #fff;
 
           font-family: "Poppins";
           font-size: 16px;
@@ -149,7 +160,7 @@
           line-height: 160%;
 
           @include responsive(phone) {
-            font-size: 16px;
+            font-size: 12px;
           }
         }
       }
