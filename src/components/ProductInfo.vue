@@ -11,53 +11,19 @@
       </div>
     </div>
     <ul class="products-list">
-      <li class="product">
+      <li
+        class="product"
+        v-for="(theme, index) in localThemes"
+        :key="theme.name"
+      >
         <div class="product__text">
-          <p class="number">01</p>
+          <p class="number">
+            {{ index + 1 }}
+          </p>
           <div class="description">
-            <p class="description-title">Vintage</p>
+            <p class="description-title">{{ theme.name }}</p>
             <p class="description-subtitle">
-              the use of simple and limited elements to get the best effect or
-              impression.
-            </p>
-          </div>
-        </div>
-        <router-link to="/portfolio"><arrowRight /></router-link>
-      </li>
-      <li class="product">
-        <div class="product__text">
-          <p class="number">02</p>
-          <div class="description">
-            <p class="description-title">Minimalist</p>
-            <p class="description-subtitle">
-              the use of simple and limited elements to get the best effect or
-              impression.
-            </p>
-          </div>
-        </div>
-        <router-link to="/portfolio"><arrowRight /></router-link>
-      </li>
-      <li class="product">
-        <div class="product__text">
-          <p class="number">03</p>
-          <div class="description">
-            <p class="description-title">Modern</p>
-            <p class="description-subtitle">
-              the use of simple and limited elements to get the best effect or
-              impression.
-            </p>
-          </div>
-        </div>
-        <router-link to="/portfolio"><arrowRight /></router-link>
-      </li>
-      <li class="product">
-        <div class="product__text">
-          <p class="number">04</p>
-          <div class="description">
-            <p class="description-title">Transitional</p>
-            <p class="description-subtitle">
-              the use of simple and limited elements to get the best effect or
-              impression.
+              {{ theme.description }}
             </p>
           </div>
         </div>
@@ -73,7 +39,14 @@
 
 <script>
 import arrowRight from "../assets/icon/arrowRight.vue";
+import themes from "../mocks/Themes.js";
 export default {
+  setup() {
+    const localThemes = themes;
+    return {
+      localThemes,
+    };
+  },
   components: {
     arrowRight,
   },

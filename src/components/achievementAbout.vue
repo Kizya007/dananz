@@ -29,6 +29,7 @@
 
 <style lang="scss" scoped>
 @import "../assets/achievementAbout.scss";
+
 </style>
 
 <script></script>

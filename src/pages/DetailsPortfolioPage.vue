@@ -1,5 +1,6 @@
 <template>
   <section class="details">
+    <baseBanner title="Minimalist Room" img="portfolioImgOne.png" />
     <div class="text">
       <div class="text-left">
         <p class="text-left__title">Project Overview</p>
@@ -54,7 +55,15 @@
   </section>
 </template>
 
-<script></script>
+<script>
+import baseBanner from "@/components/baseBanner.vue";
+
+export default {
+  components: {
+    baseBanner,
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 @import "../assets/DetailsportfolioPage.scss";

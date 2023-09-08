@@ -1,7 +1,6 @@
 <template>
   <div>
     <mainHeader />
-    <baseBanner />
     <router-view />
     <contactUs />
     <footerInfo />
@@ -12,7 +11,6 @@
 import mainHeader from "./components/mainHeader.vue";
 import footerInfo from "./components/footerInfo.vue";
 import contactUs from "@/components/contactUs.vue";
-import baseBanner from "./components/baseBanner.vue";
 
 export default {
   name: "App",
@@ -20,7 +18,6 @@ export default {
     mainHeader,
     footerInfo,
     contactUs,
-    baseBanner,
   },
 };
 </script>

@@ -7,31 +7,11 @@
       and quality furniture. We try our best to fulfill your expectations.
     </p>
     <ul class="cards">
-      <li class="cards-item">
+      <li class="cards-item" v-for="card in cards" :key="card.title">
         <p class="cards-item__circle"></p>
-        <h3 class="cards-item__title">High Quality</h3>
+        <h3 class="cards-item__title">{{ card.title }}</h3>
         <p class="cards-item__description">
-          Customize your interior design into a dream place with the best
-          designers and quality furniture. We try our best to fulfill your
-          expectations.
-        </p>
-      </li>
-      <li class="cards-item">
-        <p class="cards-item__circle"></p>
-        <h3 class="cards-item__title">Professional Designer</h3>
-        <p class="cards-item__description">
-          Customize your interior design into a dream place with the best
-          designers and quality furniture. We try our best to fulfill your
-          expectations.
-        </p>
-      </li>
-      <li class="cards-item">
-        <p class="cards-item__circle"></p>
-        <h3 class="cards-item__title">The Best Services</h3>
-        <p class="cards-item__description">
-          Customize your interior design into a dream place with the best
-          designers and quality furniture. We try our best to fulfill your
-          expectations.
+          {{ card.subtitle }}
         </p>
       </li>
     </ul>
@@ -42,4 +22,14 @@
 @import "../assets/aboutService.scss";
 </style>
 
-<script></script>
+<script>
+import ServiceCards from "@/mocks/ServiceCards.js";
+export default {
+  setup() {
+    const cards = ServiceCards;
+    return {
+      cards,
+    };
+  },
+};
+</script>
